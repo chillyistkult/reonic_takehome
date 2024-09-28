@@ -10,7 +10,6 @@ const NumberCard: FC<NumberCardProps> = ({ name, value }) => {
   return (
     <Card
       withBorder
-      key={name}
       className="overflow-hidden rounded-lg px-4 py-5 shadow sm:p-6"
     >
       <dt className="truncate font-medium text-gray-300 text-sm">{name}</dt>

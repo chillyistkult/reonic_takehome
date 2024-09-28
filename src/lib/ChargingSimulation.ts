@@ -40,6 +40,7 @@ class ChargingSimulation {
           this.vehicle.isArrivingByHour(hour)
         ) {
           this.stations[j].start(
+            //TODO: Remove moment dependency
             moment
               .duration(
                 ((this.vehicle.getChargingDemand() ?? 0) *
