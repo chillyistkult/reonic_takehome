@@ -25,7 +25,7 @@ $ yarn build
 The input parameters provided in task 1 are the actual default values of the form I render in the frontend.
 This means in order to check the results you just need to hit the simulate button.
 
-The simulation core consists of three classes: [`ChargingStation`](https://github.com/chillyistkult/reonic_takehome/blob/master/src/lib/ChargingStation.ts), [`ChargingSimulation`]((https://github.com/chillyistkult/reonic_takehome/blob/master/src/lib/ChargingSimulation.ts)) and [`Vehicle`]((https://github.com/chillyistkult/reonic_takehome/blob/master/src/lib/Vehicle.ts)). The actual simulation happens in `ChargingSimulation.run()`.
+The simulation core consists of three classes: [`ChargingStation`](https://github.com/chillyistkult/reonic_takehome/blob/master/src/lib/ChargingStation.ts), [`ChargingSimulation`](https://github.com/chillyistkult/reonic_takehome/blob/master/src/lib/ChargingSimulation.ts) and [`Vehicle`](https://github.com/chillyistkult/reonic_takehome/blob/master/src/lib/Vehicle.ts). The actual simulation happens in `ChargingSimulation.run()`.
 
 In some of my test runs I reach concurrency factors of up to 60%. While I can of course not be 100% sure if there is no bug
 in the simulation code or I just misunderstood parts of the task the numbers seems plausible to me. For example within 35040 ticks only two power spikes of  
