@@ -1,8 +1,8 @@
 import { AreaChart } from "@mantine/charts";
-import { SegmentedControl } from "@mantine/core";
 import { type FC, useMemo, useState } from "react";
 import type ChargingStation from "../../lib/ChargingStation.ts";
 import { formatInteger } from "../../utils/format.ts";
+import ButtonGroup from "../ButtonGroup/ButtonGroup.tsx";
 import ChartCard from "../ChartCard/ChartCard.tsx";
 
 enum Granularity {
@@ -56,13 +56,13 @@ const ChargingStationCard: FC<ChargingStationCardProps> = ({
       name={
         <div className="flex items-center justify-between">
           <span>Charging Stations</span>
-          <SegmentedControl
+          <ButtonGroup
             value={granularity}
-            size="xs"
             onChange={(value) => setGranularity(value as Granularity)}
-            data={Object.values(Granularity)}
-            transitionDuration={500}
-            transitionTimingFunction="linear"
+            options={Object.values(Granularity).map((value) => ({
+              value,
+              label: value,
+            }))}
           />
         </div>
       }

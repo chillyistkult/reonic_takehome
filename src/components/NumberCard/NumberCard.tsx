@@ -1,5 +1,5 @@
-import { Card } from "@mantine/core";
 import type { FC } from "react";
+import Card from "../Card/Card.tsx";
 
 type NumberCardProps = {
   name: string;
@@ -8,10 +8,7 @@ type NumberCardProps = {
 
 const NumberCard: FC<NumberCardProps> = ({ name, value }) => {
   return (
-    <Card
-      withBorder
-      className="overflow-hidden rounded-lg px-4 py-5 shadow sm:p-6"
-    >
+    <Card>
       <dt className="truncate font-medium text-gray-300 text-sm">{name}</dt>
       <dd className="mt-1 font-semibold text-3xl text-gray-100">{value}</dd>
     </Card>

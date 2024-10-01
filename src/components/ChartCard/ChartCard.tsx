@@ -1,5 +1,5 @@
-import { Card } from "@mantine/core";
 import type { FC, PropsWithChildren, ReactNode } from "react";
+import Card from "../Card/Card.tsx";
 
 type ChartCardProps = {
   name: ReactNode;
@@ -10,10 +10,7 @@ const ChartCard: FC<PropsWithChildren<ChartCardProps>> = ({
   children,
 }) => {
   return (
-    <Card
-      withBorder
-      className="overflow-hidden rounded-lg px-4 py-5 shadow sm:p-6"
-    >
+    <Card>
       <dt className="truncate font-medium text-gray-300 text-sm">{name}</dt>
       <dd className="mt-4">{children}</dd>
     </Card>

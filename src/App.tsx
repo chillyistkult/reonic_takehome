@@ -60,7 +60,7 @@ function App() {
       const vehicle = new Vehicle(
         vehiclePowerDemand / 100,
         arrivalProbabilities.map(
-          (value) => value * vehicleArrivalProbabilityFactor,
+          (value) => value * (vehicleArrivalProbabilityFactor || 1),
         ),
         dps,
       );
@@ -85,7 +85,7 @@ function App() {
   );
 
   return (
-    <div className="min-h-screen bg-zinc-800 text-white">
+    <div className="min-h-screen bg-slate-800 text-white">
       <Header>Charging Station Simulation</Header>
       <Content>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
