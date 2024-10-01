@@ -47,7 +47,7 @@ The seed is actually encoded in the url with an option in the form to generate a
 
 ### Task 2
 
-For the frontend I used Typescript, React, Tailwind and Mantine powered by Vite and Biome (Biome is a replacement for Eslint and Prettier). Mantine is only used for some core components, the majority is styled with tailwind. The design is simple but elegant: There is a form that maps to all the input parameters you ask for in the task and another section to visualize the results.
+For the frontend I used Typescript, React, Tailwind and Mantine powered by Vite and Biome (Biome is a replacement for Eslint and Prettier). Mantine is only used for the chart, everything else is styled with tailwind. The design is simple but elegant: There is a form that maps to all the input parameters you ask for in the task and another section to visualize the results.
 
 The form is connected to the simulation core and the results are of course the actual results from the simulation.  
 
